@@ -4,10 +4,51 @@
 
 <title> Cats </title>
 
-<link rel="stylesheet" type="text/css" href="cats.css"> 
+<style>
+
+body{
+	background-color: #000000;
+}
+
+#mainTitle{ 
+	text-align: center;
+	font-size: 4em;
+	color: white;
+	font-family: calibri;
+}
+
+.cat{
+	width: 45%;
+	max-height: 80%;
+	position: relative;
+	margin-top: -3%;
+	padding-bottom: 4em;
+}
+
+#neko{
+	position: relative;
+	margin-top: -3%;
+	max-width: 10%;
+
+}
+
+#kek{
+	color: gray;
+	position: relative;
+	left: -45px;
+	top: -80px;
+}
+
+</style>
 
 <script>
-	var audio = new Audio("catMusic.mp3");
+	var audio = new Audio("http://s1.vocaroo.com/media/download_temp/Vocaroo_s14RfagzfqeY.mp3");
+	audio.play();
+	
+	audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+	}, false);
 	audio.play();
 </script>
 
@@ -16,14 +57,26 @@
 
 <body>
 
+
 <h1 id="mainTitle"> cats </h1>
 
-<center> <image id="cat" src="http://epicpix.com/wp-content/uploads/2014/06/ff_1296.jpg"/> </center>
-<center> <img id="cat" src="https://i.redditmedia.com/QsCNcFWkX9BKCAgdJaU-J8xJQtwneQuSxmgn_R6fpC8.jpg?w=576&s=0828f1464b4cee856854467b72465447" /> </center>
-<center> <img id="cat" src="https://i.redditmedia.com/c31LtPVDD7RqOrevszvWd8uZbB6Mf3GseMmh_kdTjmQ.jpg?w=768&s=f5295004737bbb5cf8cc7e223672af2d"/> </center>
-<center> <img id="neko" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwX0k--cOLpcZ5RlVYw1Dlipc8UDQej70OCv551z3TWhvDZqCRBw"/> 
-<span id="kek"><h2>kek </h2></span>
+<center>
+	<image class="cat" src="http://epicpix.com/wp-content/uploads/2014/06/ff_1296.jpg"/> 
 </center>
+
+<center> 
+	<img class="cat" src="https://i.redditmedia.com/QsCNcFWkX9BKCAgdJaU-J8xJQtwneQuSxmgn_R6fpC8.jpg?w=576&s=0828f1464b4cee856854467b72465447"/> 
+</center>
+
+<center> 
+	<img class="cat" src="https://i.redditmedia.com/c31LtPVDD7RqOrevszvWd8uZbB6Mf3GseMmh_kdTjmQ.jpg?w=768&s=f5295004737bbb5cf8cc7e223672af2d"/> 
+</center>
+
+<center> 
+	<img id="neko" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwX0k--cOLpcZ5RlVYw1Dlipc8UDQej70OCv551z3TWhvDZqCRBw"/> 
+	<span id="kek"><h2>kek </h2></span>
+</center>
+
 
 
 </body>
