@@ -1,4 +1,17 @@
 #mainTitle{ 
 	text-align: center;
 	font-size: 4em;
+	color: white;
+	font-family: calibri;
+}
+
+body{
+	background-color: #000000;
+}
+
+#cat{
+	height: 80%;
+	width: 45%;
+	position: relative;
+	margin-top: -3%;
 }
