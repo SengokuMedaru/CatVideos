@@ -10,8 +10,21 @@ body{
 }
 
 #cat{
-	height: 80%;
 	width: 45%;
 	position: relative;
 	margin-top: -3%;
+	padding-bottom: 4em;
+}
+
+#neko{
+	position: relative;
+	margin-top: -3%;
+	width: 10%;
+}
+
+#kek{
+	color: gray;
+	position: relative;
+	left: -4em;
+	top: -6em;
 }
